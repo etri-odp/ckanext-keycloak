@@ -70,18 +70,18 @@ To install ckanext-keycloak:
     pip install ckanext-keycloak
 
 3. Add ``keycloak`` setting in your CKAN config file (by default the config file is located at ``/etc/ckan/default/production.ini``) as follows::
-
-   ckan.plugins = keycloak <other-plugins>
-   ckan.keycloak.authorization_endpoint = 
-   ckan.keycloak.realm = 
-   ckan.keycloak.client_id = 
-   ckan.keycloak.client_secret = 
-   ckan.keycloak.sysadmin_group_name = 
-   ckan.keycloak.profile_group_field = 
-   ckan.keycloak.profile_username_field = 
-   ckan.keycloak.profile_email_field = 
-   ckan.keycloak.profile_fullname_field = 
-
+   
+    ckan.plugins = keycloak <other-plugins>
+    ckan.keycloak.authorization_endpoint = http://localhost/auth
+    ckan.keycloak.realm = master
+    ckan.keycloak.client_id = client_id
+    ckan.keycloak.client_secret = client_secret
+    ckan.keycloak.sysadmin_group_name = admin
+    ckan.keycloak.profile_group_field = group
+    ckan.keycloak.profile_username_field = preferred_username
+    ckan.keycloak.profile_email_field = email
+    ckan.keycloak.profile_fullname_field = name
+   
 4. Restart CKAN. For example if you've deployed CKAN with Apache on Ubuntu::
 
     sudo service apache2 reload
