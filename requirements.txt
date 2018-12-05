@@ -1,0 +1,1 @@
+python-keycloak-client==0.1.3
