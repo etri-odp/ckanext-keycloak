@@ -36,9 +36,9 @@ ckanext-keycloak - Keycloak authentication extension
    What does it do? What features does it have?
    Consider including some screenshots or embedding a video!
 
-Ckanext-keycloak is a extension for enalbing the user authentication with Keycloak, an open source software product to allow single sign-on with Identity Management and Access Management aimed at modern applications and services.
+ckanext-keycloak is an extension for enabling user authentication with Keycloak, an open source software product to allow single sign-on (SSO) with Identity Management and Access Management aimed at modern applications and services.
 
-This extension provides an ability to let users use access-token from Keycloak server to access CKAN functions via CKAN REST Api.
+This extension provides the ability for users to use access-tokens from Keycloak server to access CKAN functions via CKAN REST API.
 
 Notes:
 
